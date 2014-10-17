@@ -15,4 +15,4 @@ http://athenaeum.libs.uga.edu/handle/10724/27001
 
 Users are welcome to use the code, and better yet, encouraged to improve the code. This code base was started in 2004 when I was teaching myself to program, and the last major additions were made in 2010. In my freetime, I'll be working to make this code more modular. If users are interested in results, I'll be glad to load pieces of the data (note, the 2D code led to data on the order of a TB).
 
-![Flexible Polymer Interactions](https://github.com/dseaton/polymermc/blob/master/images/interactions.png)
+![Polymer Chain Interactions](https://github.com/dseaton/polymermc/blob/master/images/interactions.png)
