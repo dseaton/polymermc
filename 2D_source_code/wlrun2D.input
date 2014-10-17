@@ -1,0 +1,92 @@
+########################################################
+#                                                      #
+#         Continuous Polymer Model - Input File        #
+#                                                      #
+#	Wang-Landau Simulations are run by default.    #
+#	Metropolis Sampling can be turned on at the    #
+#	bottom of this file.
+########################################################
+
+### Program Parameters #################################
+
+### Model ##############################################
+### Number of Spins in Each Direction ##################
+N  13
+
+### Non-Bonded Interaction (1 = LJ, 2 = Quasi LJ) ######
+NBINTERACTION  1
+
+### Wang-Landau ########################################
+### Explore - adds new bins if equal to 1 ##############
+EXPLORE  1
+
+### Bin Width for Primary Sampling Direction ###########
+dWLD1  0.1
+
+### MAXimum Boundary for Primary Sampling Direction ####
+WLD1min  -2.46
+
+### MINimum Boundary for Primary Sampling Direction ####
+WLD1max  3.0
+
+### Bin Width for Secondary Sampling Direction #########
+dWLD2  0.1
+
+### MAXimum Boundary for Secondary Sampling Direction ##
+WLD2min  0.0
+
+### MINimum Boundary for Secondary Sampling Direction ##
+WLD2max  6.0
+
+### Reduce lnf when each bin visited # of times  #######
+WLBINVISITS  50
+
+### Percentage of explored DOS cut away  ###############
+PERCENT_DOS_CUT  0.99
+
+### Initial Modification Factor (natural log) ##########
+ModFactorInit  0.5
+
+### Modification Factor Iterator #######################
+IterationFactor  2.0
+
+### Modification Factor Threshold (natural log) ########
+ModFactorFinal  1.0e-7
+
+### Turns on the Production run at the end of a sim ####
+ProductionBinSamps  1
+
+### Thermodynamics #####################################
+### Initial Temperature ################################
+TTi  0.001
+
+### Final Temperature ##################################
+TTf  5.0
+
+### Temperature Step ###################################
+dTT  0.001
+
+
+### Metropolis #########################################
+### Metropolis Sampling - "1" is ON, "0" is OFF ########
+MetropolisSampling  0
+
+### Initial Temperature for simple Seq() loop ##########
+MTi  0.45
+
+### Final Temperature for simple Seq() loop ############
+MTf  0.65
+
+### Final Temperature for simple Seq() loop ############
+MdT  0.1
+
+### Number of MC Samples taken in the Seq() function ###
+MSAMPS  4.0e3
+
+### Number of Samples separating data in Seq() #########
+MSEP  1.0e2
+
+### Number of Dropped Samples before each T run ########
+MDROP  1.0e3
+
+########################################################

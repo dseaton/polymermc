@@ -1,0 +1,77 @@
+########################################################
+#                                                      #
+#         Continuous Polymer Model - Input File        #
+#                                                      #
+#	Wang-Landau Simulations are run by default.    #
+#	Metropolis Sampling can be turned on at the    #
+#	bottom of this file.
+########################################################
+
+### Program Parameters #################################
+
+### Model ##############################################
+### Number of monomers in the chain # ##################
+N  10
+
+### Non-Bonded Interaction (1 = LJ, 2 = Quasi LJ) ######
+NBINTERACTION  1
+
+### Wang-Landau ########################################
+### Bin Width for Primary Sampling Direction ###########
+dWLD1  0.1
+
+### MAXimum Boundary for Primary Sampling Direction ####
+WLD1min  -1.9
+
+### MINimum Boundary for Primary Sampling Direction ####
+WLD1max  0.0
+
+### Flatness Criteria (min of hist / avg of hist) ######
+Flatness  0.4
+
+### Initial Modification Factor (natural log) ##########
+ModFactorInit  1.0
+
+### Modification Factor Iterator #######################
+IterationFactor  2.0
+
+### Modification Factor Threshold (natural log) ########
+ModFactorFinal  1.0e-6
+
+### Turns on the Production run at the end of a sim ####
+ProductionBinSamps  100000
+
+### Thermodynamics #####################################
+### Initial Temperature ################################
+TTi  0.001
+
+### Final Temperature ##################################
+TTf  5.0
+
+### Temperature Step ###################################
+dTT  0.001
+
+
+### Metropolis #########################################
+### Metropolis Sampling - "1" is ON, "0" is OFF ########
+MetropolisSampling  0
+
+### Initial Temperature for simple Seq() loop ##########
+MTi  5.0
+
+### Final Temperature for simple Seq() loop ############
+MTf  50.0
+
+### Final Temperature for simple Seq() loop ############
+MdT  0.1
+
+### Number of MC Samples taken in the Seq() function ###
+MSAMPS  1.0e4
+
+### Number of Samples separating data in Seq() #########
+MSEP  1.0e2
+
+### Number of Dropped Samples before each T run ########
+MDROP  1.0e1
+
+########################################################
