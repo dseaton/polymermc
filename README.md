@@ -25,7 +25,7 @@ In order to run, command line arguments are required (future development should 
 
 `argv[1]`: input file for simulation (see [example.input](https://github.com/dseaton/polymermc/blob/master/1D_source_code/example.input))
 
-`argv[2]`: flag for "ProductionRun" paramter. This flag states whether to start where a previous simluation left off.
+`argv[2]`: 0 or 1, where 1 indicates to start where a previous simluation left off. The run must have been started with the "ProductionRun" flag (argv[3]) equal to 1.
 
 `argv[3]`: 0 or 1, 1 indicates a "ProductionRun", which then peridically saves the density of states and other data needed to pick up where a simulation left off. This was added because 2D simulations were taking months to complete. Avoided cluster crashing and running into time-outs for clusters with explicit time caps.
 
